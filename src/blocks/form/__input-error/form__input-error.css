@@ -1,4 +1,4 @@
-.popup__field-error {
+.form__input-error {
   display: none;
   font-weight: normal;
   font-size: 12px;
@@ -8,6 +8,6 @@
   padding: 0;
 }
 
-.popup__field-error_active {
+.form__input-error_active {
   display: block;
 }

@@ -22,9 +22,9 @@ function AddPlacePopup(props) {
       isOpen={props.isOpen} 
       onClose={props.onClose} 
       onSubmit={handleSubmit} >
-      <label className="popup__label">
+      <label className="form__label">
         <input 
-          className="popup__field popup__field_place_name" 
+          className="form__input form__input_place_name" 
           id="place-input" 
           name="place-input" 
           type="text" 
@@ -34,11 +34,11 @@ function AddPlacePopup(props) {
           ref={name}  
           required 
         />
-        <span className="popup__field-error" id="place-input-error" />
+        <span className="form__input-error" id="place-input-error" />
       </label>
-      <label className="popup__label">
+      <label className="form__label">
         <input 
-          className="popup__field popup__field_place_image" 
+          className="form__input form__input_place_image" 
           name="image-input" 
           id="image-input" 
           type="url" 
@@ -46,7 +46,7 @@ function AddPlacePopup(props) {
           ref={link} 
           required 
         />
-        <span className="popup__field-error" id="image-input-error" />
+        <span className="form_input-error" id="image-input-error" />
       </label>
     </PopupWithForm>
   )

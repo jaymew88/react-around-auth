@@ -1,4 +1,4 @@
-.popup__button_role_save {
+.form__submit-btn {
   background: #000000;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 2px;
@@ -11,12 +11,12 @@
   text-align: center;
 }
 
-.popup__button_role_save:hover {
+.form__submit-btn:hover {
   background: rgba(0, 0, 0, 0.8);
 }
 
 @media (min-width: 475px) {
-  .popup__button_role_save {
+  .form__submit-btn {
     font-size: 18px;
     padding: 14px 0;
   }

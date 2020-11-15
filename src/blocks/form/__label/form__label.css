@@ -1,19 +1,21 @@
-.popup__label {
+@import url(./_theme/form__label_theme_dark.css);
+
+.form__label {
   display: block;
   margin: 0 0 48px 0;
 }
 
-.popup__label:last-of-type {
+.form__label:last-of-type {
   margin-bottom: 36px;
 }
 
 @media (min-width: 475px) {
-  .popup__label {
+  .form__label {
     font-size: 14px;
     margin-bottom: 30px;
   }
 
-  .popup__label:last-of-type {
+  .form__label:last-of-type {
     margin-bottom: 46px;
   }
 } 

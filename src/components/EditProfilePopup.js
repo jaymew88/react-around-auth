@@ -38,9 +38,9 @@ function EditProfilePopup(props) {
       onClose={props.onClose} 
       onSubmit={handleSubmit} 
     >
-      <label className="popup__label">
+      <label className="form__label">
         <input 
-          className="popup__field popup__field_name" 
+          className="form__input form__input_name" 
           name="name-input" 
           id="name-input" 
           type="text" 
@@ -53,11 +53,11 @@ function EditProfilePopup(props) {
           onChange={handleNameChange} 
           required 
         />
-        <span className="popup__field-error" id="name-input-error" />
+        <span className="form__input-error" id="name-input-error" />
       </label>
-      <label className="popup__label">
+      <label className="form__label">
         <input 
-          className="popup__field popup__field_job" 
+          className="form__input form__input_job" 
           name="job-input" 
           id="job-input" 
           type="text" 
@@ -69,7 +69,7 @@ function EditProfilePopup(props) {
           onChange={handleDescriptionChange} 
           required 
         />
-        <span className="popup__field-error" id="job-input-error" />
+        <span className="form__input-error" id="job-input-error" />
       </label> 
     </PopupWithForm>
   );

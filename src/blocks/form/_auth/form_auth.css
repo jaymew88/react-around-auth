@@ -1,0 +1,10 @@
+.form_auth {
+  position: relative;
+  min-height: 200px;
+  margin: 0 auto;
+}
+@media (min-width: 769px) {
+  .form_auth {
+    min-height: 300px;
+  }
+}

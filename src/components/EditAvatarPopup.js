@@ -21,16 +21,16 @@ function EditAvatarPopup(props) {
     onClose={props.onClose} 
     onSubmit={handleSubmit}
   >
-    <label className="popup__label">
+    <label className="form__label">
       <input 
-        className="popup__field popup__field_edit-pic" 
+        className="form__input form__input_edit-pic" 
         name="edit-pic" id="edit-pic" 
         type="url" 
         placeholder="Image Link" 
         ref={avatarLinkRef} 
         required 
       />
-      <span className="popup__field-error" id="edit-pic-error" />
+      <span className="form__input-error" id="edit-pic-error" />
     </label>
   </PopupWithForm>
   )
