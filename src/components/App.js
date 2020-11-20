@@ -72,17 +72,17 @@ function App() {
   } 
 
   function handleSignup({ email, password }) {
-    auth.resgisterUser(email, password)
+    auth.registerUser(email, password)
       .then((res) => {
         if (res && res.data) {
-          setIsUserToolTipOpen(true);
+          setIsToolTipOpen(true);
           setAuthSuccess(true);
           setLoggedIn(true);
           setUserEmail(res.data.email);
           history.push("/");
         }
       }).catch(() => {
-        setIsUserToolTipOpen(true);
+        setIsToolTipOpen(true);
         setAuthSuccess(false);
       }); 
   }
@@ -185,6 +185,7 @@ function App() {
     setIsAddPlacePopupOpen(false);
     setIsEditAvatarPopupOpen(false);
     setIsDeletePopupOpen(false);
+    setIsToolTipOpen(false);
   }
 
   return (
@@ -192,9 +193,9 @@ function App() {
       <div className="page">
         <CurrentUserContext.Provider value={currentUser}>
           <Switch>
-            <ProtectedRoute path="/" exact logggedIn={loggedIn}>
+            <ProtectedRoute path="/" exact loggedIn={loggedIn}>
               <Header 
-                logggedIn={loggedIn}
+                loggedIn={loggedIn}
                 email={userEmail}
                 link={{ description: "Log out", to : "#" }}
                 onLogout={handleLogout}
@@ -223,7 +224,7 @@ function App() {
                 email={userEmail}
                 link={{ description: "Log in", to:"/signin" }}
               />
-              <Register onsignup={handleSignup} />
+              <Register onSignup={handleSignup} />
             </Route>
             <Route>
               <Redirect to={loggedIn ? "/" : "/signin"} />

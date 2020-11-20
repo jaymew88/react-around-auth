@@ -9,3 +9,7 @@
   border-radius: 2px;
   margin-bottom: 20px;
 }
+
+.form__submit-btn_light:hover {
+  background: rgba(265, 265, 265, 0.8);
+}

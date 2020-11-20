@@ -3,6 +3,9 @@
 @import url(../popup/__img-title/popup__img-title.css);
 @import url(../popup/__img/popup__img.css);
 @import url(../popup/__title/popup__title.css);
+@import url(../popup/__status-icon/popup__status-icon.css);
+@import url(../popup/__title/_type/popup__title_type_auth.css);
+@import url(../popup/__container/_type/popup__container_type_image.css);
 
 .popup {
 	background-color: rgba(0, 0, 0, 0.5);

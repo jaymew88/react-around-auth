@@ -8,7 +8,7 @@ function Login(props) {
   function handleSubmit(e) {
     e.preventDefault();
 
-    props.onSignup({
+    props.onSignin({
       email: emailRef.current.value,
       password: passwordRef.current.value
     });

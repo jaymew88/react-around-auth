@@ -11,7 +11,7 @@ function Header(props) {
         <Link 
           to={props.link.to}
           className="header__link"
-          onclick={props.onLogout ? props.onLogout : null}
+          onClick={props.onLogout ? props.onLogout : null}
         > 
           {props.link.description} 
         </Link>

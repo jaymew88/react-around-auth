@@ -8,6 +8,7 @@ function InfoToolTip(props) {
     props.success 
       ? "popup__status-icon_type_success"
       : "popup__status-icon_type_error"
+   
   }`;
 
   return (
@@ -15,8 +16,8 @@ function InfoToolTip(props) {
       <div className="popup__container">
         <button className="button popup__close-btn" onClick={props.onClose}>
         </button>
-        <div className={`popup__status_icon ${statusIcon}`}></div>
-        <h2 className="popup__title">{statusMessage}</h2>
+        <div className={`popup__status-icon ${statusIcon}`}></div>
+        <h2 className="popup__title popup__title_type_auth">{statusMessage}</h2>
       </div>
     </section>
   )
