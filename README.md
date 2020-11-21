@@ -1,6 +1,32 @@
-# Getting Started with Create React App
+# Around The U.S.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+* Intro
+* Description
+* Figma
+* Technologies
+
+### Intro
+
+This is a project called "Around The U.S.". It is an interactive page where users can add, remove, or like photos. This respository contains the front-end project on React with added authorizations and register functions.  GitHub pages at: https://jaymew88.github.io/react-around-auth/
+
+All authorization, registration and token requests must go through to the server running on https://register.nomoreparties.co. Other requests which are not specified in this project may be connected to either this back end server, or the one you have been building.
+
+### Description
+
+This is a single page responsive website using CSS, HTML and JavaScript,following the BEM methodology. This was a project from a series of briefs, and uses a BEM CSS nested file structure.
+
+### Figma
+
+Link to project on Figma: https://www.figma.com/file/PJbelNQkbotPz2M1Lth55j/Sprint-14-(EN)?node-id=0%3A1 
+
+### Technologies
+
+* HTML
+* CSS
+* [BEM](https://en.bem.info/) 
+* JavaScript
+* React
 
 ## Available Scripts
 
