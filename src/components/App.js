@@ -53,6 +53,7 @@ function App() {
     if (localStorage.getItem("jwt")) {
       tokenCheck();
     }
+    Promise.all([]);
   }, []);
 
   React.useEffect(tokenCheck, []);

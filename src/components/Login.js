@@ -12,9 +12,6 @@ function Login(props) {
       email: emailRef.current.value,
       password: passwordRef.current.value
     });
-
-    emailRef.current.value = "";
-    passwordRef.current.value = "";
   }
 
   return (
